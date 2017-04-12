@@ -1,0 +1,15 @@
+.category-represent {
+    padding: 15px; /* Поля вокруг */
+    width: 200px; /* Ширина */
+    text-align: center; /* Выравнивание по центру */
+    margin: 0 auto;
+}
+
+.category-represent__img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+figcaption {
+    color: #fff; /* Цвет текста */
+}

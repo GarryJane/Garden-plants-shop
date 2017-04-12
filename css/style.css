@@ -1,74 +1,73 @@
-a[href] {
-    text-decoration: none;
-    color: yellowgreen;
-}
-
-a[href]:hover {
-    color: yellow;
-}
-
-html,
-body {
+html {
     height: 100%;
-    background: url("../img/grunt_rastitelny.jpg") repeat fixed;
 }
 
-.wrapper {
-    display: table;
-    padding-top: 55px;
-    padding-left: 250px;
-    min-height: 100%;
+body {
+    background: url("../img/grunt_rastitelny.jpg") repeat fixed;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .top-menu-bar {
     background: darkolivegreen;
-    color: black;
+    color: yellowgreen;
     text-align: right;
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 50px;
-    padding: 0 20px;
     box-sizing: border-box;
+}
+
+.top-menu {
+    display: inline-block;
+    height: 100%;
+    box-sizing: border-box;
+    color: inherit;
+    margin: 0 auto;
+}
+
+.top-menu-logo {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 900;
+    color: inherit;
+    line-height: 50px;
 }
 
 .top-menu__item {
     display: inline-block;
-    list-style: none;
-    padding: 0 15px;
-}
-
-.left-menu-bar {
- /*   background: darkolivegreen;*/
-    color: black;
-    text-align: center;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    width: 250px;
     height: 100%;
-    box-sizing: border-box;
-}
-
-.left-menu {
-    padding: 0 0;
-}
-
-.left-menu__item {
     list-style: none;
-    padding: 15px 5px;
+    padding: 0 20px;
+    border-radius: 50%;
 }
 
-.content {
+.top-menu__item > a[href] {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    line-height: 50px;
+}
+
+.top-menu__item:hover {
+    color: yellow;
+    background-color: darkgreen;
+}
+
+.main {
+    display: table-row;
     color: white;
     font-size: 20px;
-    display: table-row;
     height: 100%;
 }
 
 .footer {
-    position: relative;
     background: darkolivegreen;
     color: black;
     text-align: center;
