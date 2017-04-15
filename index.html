@@ -2,109 +2,138 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
-    <link href="css/navbar.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.css">
-    <script src="vendor/jquery/jquery.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <title>Главная без bootstrap</title>
+    <link rel="stylesheet" href="vendor/normalize-css/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/categories.css">
 </head>
 <body>
 
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand">Project "Садовые растения"</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Главная</a></li>
-                <li><a href="views/plants.html">Растения</a></li>
-                <li><a href="views/feedback.html">Обратная связь</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</div>
+<div class="container">
 
-<main>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <article>
-                    <header>
-                        <h2>Заголовок главной страницы</h2>
-                    </header>
-                    <p>
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                    </p>
-                    <p>
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                    </p>
-                    <p>
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                    </p>
-                    <p>
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                    </p>
-                    <p>
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                    </p>
-                    <p>
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                        Текст главной страницы
-                    </p>
+    <div class="top-menu-bar">
+        <span class="top-menu-logo">Сад в Домажино</span>
+        <label class="nav-sm-btn" for="nav-sm-checkbox" id="nav-sm-btn">
+            <i class="fa fa-bars nav_highlight"></i></label>
+        <input type="checkbox" id="nav-sm-checkbox" class="nav-sm-checkbox">
+        <ul class="top-menu">
+            <li class="top-menu__item top-menu__item_active"><a>Главная</a></li>
+            <li class="top-menu__item"><a href="#">Как сделать заказ</a></li>
+            <li class="top-menu__item"><a href="#">Контакты</a></li>
+            <li class="top-menu__item"><a href="#">Фото сада</a></li>
+            <li class="top-menu__item"><a href="#">Видео сада</a></li>
+        </ul>
+    </div> <!-- ./top-menu-bar -->
 
-                </article><!-- /.blog-post -->
-            </div><!-- /. col -->
-        </div><!-- /.row -->
-    </div>
-</main>
+    <div class="main">
+
+        <div class="content">
+            <div class="row row_page-title">
+                <div class="col-xs-12">
+                    <figure class="page-title">
+                        <img src="img/pano-garden.jpg" class="page-title__img" alt=""/>
+                        <figcaption class="page-title__text">
+                            <h1>Растения Марины Григорьевой</h1>
+                            <h2>+7 123 456 78 90</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <label class="cat-previe-btn" for="cat1-preview-checkbox" id="cat1-previe-btn">
+                        <figure class="category-represent">
+                            <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                            <figcaption class="category-represent__name">Лилейники</figcaption>
+                        </figure>
+                    </label>
+                    <input type="checkbox" id="cat1-preview-checkbox" class="cat-preview-checkbox">
+                </div>
+                <div class="col-xs-4">
+                    <figure class="category-represent">
+                        <img src="img/plant-2.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Хосты</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-4">
+                    <figure class="category-represent">
+                        <img src="img/plant-3.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Пионы</figcaption>
+                    </figure>
+                </div>
+            </div> <!-- ./row -->
+            <div class="row">
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Ирисы сибирские</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Астильбы</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Букеры</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Гейхера, фжыдвлр</figcaption>
+                    </figure>
+                </div>
+            </div> <!-- ./row -->
+            <div class="row">
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Кустарники</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Деревья</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Заполняющие растения</figcaption>
+                    </figure>
+                </div>
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Жемчужинки моего сада</figcaption>
+                    </figure>
+                </div>
+            </div> <!-- ./row -->
+            <div class="row">
+                <div class="col-xs-3">
+                    <figure class="category-represent">
+                        <img src="img/plant-1.png" class="category-represent__img" alt=""/>
+                        <figcaption class="category-represent__name">Прочие многолетние</figcaption>
+                    </figure>
+                </div>
+            </div> <!-- ./row -->
+        </div> <!-- ./content -->
+
+    </div> <!-- ./main -->
+
+</div> <!-- ./container -->
+
+<div class="footer">@2017 Garry Jane</div>
+
+</div> <!-- ./wrapper -->
 </body>
+<script src="js/menu.js"></script>
 </html>
