@@ -1,14 +1,17 @@
 .category-represent {
     padding: 15px; /* Поля вокруг */
-    width: 200px; /* Ширина */
-    text-align: center; /* Выравнивание по центру */
+    width: 95%; /* Ширина */
+    text-align: center;
     margin: 0 auto;
+    color: lightcoral;
 }
 
 .category-represent__img {
-    width: 100%;
+    width: 200px;
 }
 
-figcaption {
-    color: #fff; /* Цвет текста */
+@media (max-width: 750px) {
+    .category-represent__img {
+        width: 50%;
+    }
 }
