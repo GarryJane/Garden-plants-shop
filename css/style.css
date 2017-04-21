@@ -1,10 +1,12 @@
 html {
     height: 100%;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 body {
-    background: url("../img/grunt_rastitelny.jpg") repeat fixed;
+  /*  background: url("../img/grunt_rastitelny.jpg") repeat fixed;
+  */
+    background-color: black;
     height: 100%;
     padding: 0;
     margin: 0 auto;
@@ -27,4 +29,5 @@ body {
 .content {
     max-width: 1200px;
     margin: 0 auto;
+    z-index: 1;
 }

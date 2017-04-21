@@ -9,6 +9,7 @@
     height: 2.5rem;
     font-family: 'Neucha', cursive;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 .top-menu {
@@ -18,6 +19,7 @@
     color: inherit;
     margin: 0 auto;
     padding: 0;
+    z-index: 2501;
 }
 
 .top-menu-logo {
@@ -41,6 +43,7 @@
     text-decoration: none;
     color: inherit;
     height: 100%;
+    width: 100%;
     line-height: 2.5rem;
     text-transform: lowercase;
     font-size: 1rem;
@@ -57,7 +60,7 @@
     cursor: none;
 }
 
-    /* Меню для маленьких экранов */
+/* Меню для маленьких экранов */
 .nav-sm-checkbox {
     display: none;
     width: 100%;
@@ -79,7 +82,7 @@
     display: block;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 981px) {
     .nav-sm-btn {
         display: inline-block;
     }

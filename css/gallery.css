@@ -1,0 +1,50 @@
+.gallery {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery__image {
+    display: none;
+}
+
+.gallery__slide_active .gallery__image{
+    display: block;
+}
+
+.gallery__image-1 {
+    height: 300px;
+    background: orange;
+}
+
+.gallery__image-2 {
+    height: 300px;
+    background: green;
+}
+
+.gallery__image-3 {
+    height: 300px;
+    background: blue;
+}
+
+.gallery__left {
+    width: 50px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.gallery__right {
+    width: 50px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+}

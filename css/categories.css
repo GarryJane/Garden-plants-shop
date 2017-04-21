@@ -7,11 +7,7 @@
 }
 
 .category-represent__img {
-    width: 200px;
+    width: 95%;
+    max-width: 200px;
 }
 
-@media (max-width: 750px) {
-    .category-represent__img {
-        width: 50%;
-    }
-}

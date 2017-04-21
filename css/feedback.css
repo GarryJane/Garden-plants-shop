@@ -1,0 +1,71 @@
+.mail-form {
+    color: greenyellow;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.mail-form__fieldset {
+    position: relative;
+    border: 1px solid darkgreen;
+}
+
+.mail-form__legend {
+    padding: 0 0.5rem;
+    font-family: 'Neucha', cursive;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.mail-form__input-name,
+.mail-form__input-email,
+.mail-form__input-email-body {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid darkgreen;
+    height: 1.7rem;
+    font-size: 1rem;
+    background: none;
+    outline: none;
+    color: inherit;
+}
+
+.mail-form__btn {
+    height: 1.5rem;
+    border: 0;
+    background: darkolivegreen;
+    line-height: 1.5rem;
+    text-transform: lowercase;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: 'Neucha', cursive;
+}
+
+.mail-form__btn_submit {
+    color: yellowgreen;
+}
+
+.mail-form__btn_reset {
+    color: red;
+}
+
+.mail-form__btn:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.mail-form__input-email-body {
+    height: 10rem;
+    margin-bottom: 0.5rem;
+    resize: none;
+    border-bottom: none;
+}
+
+.mail-form__input-name:focus,
+.mail-form__input-email:focus {
+    border-bottom: 1px solid greenyellow;
+}
+
+.mail-form__input-email-body:focus {
+    border: 1px solid greenyellow;
+}
