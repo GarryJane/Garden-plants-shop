@@ -8,25 +8,20 @@
     width: 100%;
     height: 2.5rem;
     font-family: 'Neucha', cursive;
-    box-sizing: border-box;
     z-index: 2;
 }
 
 .top-menu {
-    display: inline-block;
-    height: 2.5rem;
     box-sizing: border-box;
     color: inherit;
     margin: 0 auto;
     padding: 0;
-    z-index: 2501;
 }
 
 .top-menu-logo {
     position: absolute;
     left: 20px;
     font-style: italic;
-    font-weight: 900;
     color: inherit;
     line-height: 2.5rem;
 }
@@ -47,12 +42,11 @@
     line-height: 2.5rem;
     text-transform: lowercase;
     font-size: 1rem;
-    font-weight: 900;
 }
 
 .top-menu__item:hover:not(.top-menu__item_active) {
     color: yellow;
-    background-color: darkgreen;
+    background-color: #47640c;
 }
 
 .top-menu__item_active {

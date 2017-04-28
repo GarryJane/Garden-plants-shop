@@ -6,14 +6,13 @@
 
 .mail-form__fieldset {
     position: relative;
-    border: 1px solid darkgreen;
+    border: 1px solid #47640c;
 }
 
 .mail-form__legend {
     padding: 0 0.5rem;
     font-family: 'Neucha', cursive;
     font-size: 1rem;
-    font-weight: 900;
 }
 
 .mail-form__input-name,
@@ -22,7 +21,7 @@
     display: block;
     width: 100%;
     border: 0;
-    border-bottom: 1px solid darkgreen;
+    border-bottom: 1px solid #47640c;
     height: 1.7rem;
     font-size: 1rem;
     background: none;
@@ -37,8 +36,8 @@
     line-height: 1.5rem;
     text-transform: lowercase;
     font-size: 1rem;
-    font-weight: 900;
     font-family: 'Neucha', cursive;
+    padding: 0;
 }
 
 .mail-form__btn_submit {
@@ -46,11 +45,15 @@
 }
 
 .mail-form__btn_reset {
-    color: red;
+    color: #ff8a3a;
+}
+
+.mail-form_btns {
+    margin: auto;
 }
 
 .mail-form__btn:hover {
-    background-color: darkgreen;
+    background-color: #47640c;
     cursor: pointer;
 }
 
