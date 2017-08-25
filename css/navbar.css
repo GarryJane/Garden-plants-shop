@@ -73,6 +73,10 @@
     text-align: center;
 }
 
+.nav-sm-btn > i {
+    line-height: 2.5rem;
+}
+
 .nav-sm-checkbox:checked + .top-menu {
     display: block;
 }
