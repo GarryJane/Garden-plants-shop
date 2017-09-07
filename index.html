@@ -1,4 +1,4 @@
-cd .<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- git test -->
 <html lang="ru">
 <head>
@@ -12,6 +12,8 @@ cd .<!DOCTYPE html>
     <link rel="stylesheet" href="css/navbar.css">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/map.css">
 </head>
 <body>
 
@@ -23,11 +25,12 @@ cd .<!DOCTYPE html>
             <i class="fa fa-bars nav_highlight"></i></label>
         <input type="checkbox" id="nav-sm-checkbox" class="nav-sm-checkbox">
         <ul class="top-menu">
-            <li class="top-menu__item top-menu__item_active"><a>Главная</a></li>
-            <li class="top-menu__item"><a href="#">Как сделать заказ</a></li>
-            <li class="top-menu__item"><a href="views/feedback.html">Контакты</a></li>
-            <li class="top-menu__item"><a href="#">Фото сада</a></li>
-            <li class="top-menu__item"><a href="#">Видео сада</a></li>
+            <li class="top-menu__item top-menu__item_active" title="Домашняя страница"><a><i title="Домашняя страница" class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li class="top-menu__item" title="Как сделать заказ"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" title="Как сделать заказ"></i></a></li>
+            <li class="top-menu__item" title="Фото сада"><a title="Фото сада" href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i></a></li>
+            <li class="top-menu__item" title="Видео сада"><a title="Видео сада" href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a></li>
+            <li id="feedbackItem" class="top-menu__item" data-target="mail-form-container" title="Написать сообщение"><a title="Написать сообщение"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+            <li id="mapItem" class="top-menu__item" data-target="map-container" title="посмотреть на карте"><a><i title="посмотреть на карте" class="fa fa-map-o" aria-hidden="true"></i></a></li>
         </ul>
     </div> <!-- ./top-menu-bar -->
 
@@ -149,7 +152,49 @@ cd .<!DOCTYPE html>
     </div> <!-- ./main -->
     <!--<div class="footer">@2017 Garry Jane</div>-->
 </div> <!-- ./container -->
+<footer class="footer"> Garry Jane © 2017</footer>
 
+<div id="mail-form-container" class="mail-form-container hidden">
+    <div class="row">
+        <div class="col-xs-1 _close-btn-container">
+            <div id="mail-form__close-btn" class="mail-form__close-btn" data-target="mail-form-container"><i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="col-xs-11 col-md-11">
+            <form class="mail-form" action="#" method="POST">
+                <fieldset class="mail-form__fieldset">
+                    <legend class="mail-form__legend">Пишите:</legend>
+                    <input type="text" name="name" id="name" class="mail-form__input-name" placeholder="Имя">
+                    <input type="email" name="email" id="email" class="mail-form__input-email"
+                           placeholder="Ваш e-mail">
+                    <textarea name="email-body" id="email-body" class="mail-form__input-email-body"
+                              placeholder="Текст сообщения"></textarea>
+                    <div class="row mail-form_btns">
+                        <input type="submit" class="col-xs-4 mail-form__btn mail-form__btn_submit"
+                               value="Отправить">
+                        <input type="reset" class="col-xs-4 col-xs-offset-4 mail-form__btn mail-form__btn_reset"
+                               value="Очистить">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div id="map-container" class="map-container hidden">
+    <div class="col-xs-1 _close-btn-container">
+        <div id="map__close-btn" class="mail-form__close-btn" data-target="map-container"><i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="col-xs-11">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0-92sXWSY-zAaoUgllAXTc2st_9E6uYc&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
+
+
+</div>
 </body>
 <script src="js/menu.js"></script>
 <!--

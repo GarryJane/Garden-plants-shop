@@ -1,7 +1,17 @@
+.mail-form-container {
+    position: fixed;
+    top: 65px;
+    right: 15px;
+    z-index: 10;
+}
+
 .mail-form {
-    color: greenyellow;
     margin: 0 auto;
-    max-width: 600px;
+    width: 320px;
+    height: 400px;
+    color: greenyellow;
+    background-color: black;
+    border: 1px solid #47640c;
 }
 
 .mail-form__fieldset {
@@ -71,4 +81,18 @@
 
 .mail-form__input-email-body:focus {
     border: 1px solid greenyellow;
+}
+
+.mail-form__close-btn {
+    border-radius: 50%;
+    background-color: #ff8a3a;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+
+._close-btn-container {
+    text-align: center;
+    line-height: 25px;
+    padding: 0;
 }

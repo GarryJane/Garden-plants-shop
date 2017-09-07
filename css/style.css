@@ -4,9 +4,8 @@ html {
 }
 
 body {
-  /*  background: url("../img/grunt_rastitelny.jpg") repeat fixed;
-  */
-    background-color: black;
+    background: url("../img/grunt_rastitelny.jpg") repeat fixed;
+ /*   background-color: #4e4e41;*/
     height: 100%;
     padding: 0;
     margin: 0 auto;
