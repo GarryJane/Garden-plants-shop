@@ -1,7 +1,7 @@
-.mail-form-container {
+.dialog-box-container {
     position: fixed;
     top: 65px;
-    right: 15px;
+    right: 80px;
     z-index: 10;
 }
 

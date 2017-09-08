@@ -48,6 +48,15 @@
 .top-menu__item:hover:not(.top-menu__item_active) {
     color: yellow;
     background-color: #47640c;
+    cursor: pointer;
+}
+
+.top-menu__item:hover:not(.top-menu__item_active) > a, .top-menu__item:hover:not(.top-menu__item_active) > a > i {
+    cursor: pointer;
+}
+
+.mail-form__close-btn {
+    cursor: pointer;
 }
 
 .top-menu__item_active {
@@ -66,7 +75,7 @@
     display: none;
     position: absolute;
     right: 0;
-    width: 2.5rem;
+    width: 3rem;
     height: 2.5rem;
     line-height: 2.5rem;
     background-color: green;
@@ -96,5 +105,6 @@
     .top-menu__item {
         display: block;
         text-align: left;
+        width: 3rem;
     }
 }
