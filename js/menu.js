@@ -46,23 +46,24 @@ function pauseVideo() {
     videoPlayer.pause();
 }
 
-let feedbackItem = document.getElementById("feedbackItem");
-let feedbackCloseBtn = document.getElementById("mail-form__close-btn");
-feedbackItem.addEventListener("click", toggle);
-feedbackCloseBtn.addEventListener("click", toggle);
+document.getElementById("feedbackItem")
+    .addEventListener("click", toggle);
+document.getElementById("mail-form__close-btn")
+    .addEventListener("click", toggle);
 
-let mapItem = document.getElementById("mapItem");
-let mapCloseBtn = document.getElementById("map__close-btn");
-mapItem.addEventListener("click", toggle);
-mapCloseBtn.addEventListener("click", toggle);
+document.getElementById("mapItem")
+    .addEventListener("click", toggle);
+document.getElementById("map__close-btn")
+    .addEventListener("click", toggle);
 
-let videoItem = document.getElementById("videoItem");
-let videoCloseBtn = document.getElementById("video__close-btn");
+document.getElementById("videoItem")
+    .addEventListener("click", toggle)
+    .addEventListener("click", pauseVideo);
+document.getElementById("video__close-btn")
+    .addEventListener("click", toggle)
+    .addEventListener("click", pauseVideo);
+
 let videoPlayer = document.getElementById("video");
-videoItem.addEventListener("click", toggle);
-videoItem.addEventListener("click", pauseVideo);
-videoCloseBtn.addEventListener("click", toggle);
-videoCloseBtn.addEventListener("click", pauseVideo);
 
 
 

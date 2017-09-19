@@ -97,9 +97,7 @@
             </div>
         </div>
         <div class="col-xs-11">
-            <script type="text/javascript" charset="utf-8" async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0-92sXWSY-zAaoUgllAXTc2st_9E6uYc&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true">
-            </script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1e126e4c69c515bfac22092a6c2483ddccddcb9287689f29605eefa5837c0fb6&amp;width=320&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </div> <!-- ./map-container hidden -->
 
