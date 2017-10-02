@@ -23,17 +23,13 @@
             <i class="fa fa-bars nav_highlight"></i></label>
         <input type="checkbox" id="nav-sm-checkbox" class="nav-sm-checkbox">
         <ul class="top-menu">
-            <li class="top-menu__item top-menu__item_active" title="Домашняя страница">
+  <!--          <li class="top-menu__item top-menu__item_active" title="Домашняя страница">
                 <a>
                     <i title="Домашняя страница" class="fa fa-home" aria-hidden="true"></i>
                 </a>
             </li>
-            <li class="top-menu__item" title="Как сделать заказ">
-                <a href="#">
-                    <i class="fa fa-shopping-cart" aria-hidden="true" title="Как сделать заказ"></i>
-                </a>
-            </li>
-            <!--
+   -->
+  <!--
             <li class="top-menu__item" title="Фото сада"><a title="Фото сада" href="#">
                     <i class="fa fa-camera-retro" aria-hidden="true"></i>
                 </a>
@@ -55,6 +51,7 @@
                        data-target="map-container"></i>
                 </a>
             </li>
+
         </ul>
     </div> <!-- ./top-menu-bar -->
 
