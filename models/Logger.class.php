@@ -6,21 +6,15 @@
 abstract class Logger
 {
     const DEF_FILENAME = "logger.log";
-
+    const DEF_DIR = "logs";
     /**
      * @description Метод logMsg, записывает $msg в $dirName/$fileName
      * @param string $dirName
      * @param string $fileName
      * @param string $msg (* может быть и array)
      */
-    public function logMsg( $msg = "", $dirName = "IS NOT SET", $fileName = "IS NOT SET")
+    public function logMsg( $msg = "", $dirName = self::DEF_DIR, $fileName = self::DEF_FILENAME)
     {
-        if ($dirName === "IS NOT SET") {
-            $dirName = dirname("logs");
-        }
-        if ($fileName === "IS NOT SET") {
-            $fileName = "logger.log";
-        }
         $fileName = $dirName . "/" . $fileName;
 
         if (is_array($msg)) {
