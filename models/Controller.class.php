@@ -2,6 +2,11 @@
 
 include('Logger.class.php');
 
+define('TITLE', 'Сад в Домажино');
+define('HOME', 'v_cont_home.php');
+define('VIEW_PATH', 'views');
+
+
 class Controller
 {
     protected $content = [];
@@ -9,12 +14,12 @@ class Controller
 
     public function __construct()
     {
-        if(isset($_POST)) {
+        if (isset($_POST)) {
             self::byPOST();
         }
 
-        if(isset($_GET)) {
-             self::byGET();
+        if (isset($_GET)) {
+            self::byGET();
         } else {
             self::render();
         }
@@ -22,29 +27,15 @@ class Controller
 
     protected function byGET()
     {
-        // Rendering by $GET['action'] value
-        if(!isset($_GET['page'])) {
-            self::render();
-        } else {
-            switch ($_GET['page']) {
-                case 'single':
-                    self::render('single.php',
-                        [
-                            "title" => "Single Page",
-                            "activeWomen" => "header-menu__item_active"
-                        ]);
-                    break;
-                default:
-                    self::render();
-            }
-        }
+        self::render();
     }
 
     protected function byPOST()
     {
+        self::render();
     }
 
-    public function render($templateName = 'v_cont_home.php', $page = ['title' => 'Сад в Домажино'], $path = 'views')
+    public function render($templateName = HOME, $page = ['title' => TITLE], $path = VIEW_PATH)
     {
         include("$path/v_header.php");
         include("$path/$templateName");

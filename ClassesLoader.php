@@ -4,6 +4,7 @@ abstract class ClassesLoader
 {
     const DEF_DIRS = ['models'];
     const FILES_MASK_REG = "/.class.php/";
+
     /**
      * Метод load, загружает классы, соответствующие $fileMask из $dirArr
      * @param array $dirArr - массив директорий
@@ -27,10 +28,10 @@ abstract class ClassesLoader
                 }
             }
         }
-        if ( ($n = count($incClassesArr)) > 0) {
+        if (($n = count($incClassesArr)) > 0) {
             return [
                 'status' => 'success',
-		'added' => $n,
+                'added' => $n,
                 'list' => $incClassesArr
             ];
         }

@@ -84,11 +84,13 @@
 }
 
 .mail-form__close-btn {
-    border-radius: 50%;
-    background-color: #ff8a3a;
-    text-align: center;
     width: 25px;
     height: 25px;
+    border-radius: 50%;
+    font-size: 200%;
+    font-weight: 100;
+    color: red;
+    text-align: center;
 }
 
 ._close-btn-container {
