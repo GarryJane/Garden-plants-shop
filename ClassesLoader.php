@@ -10,7 +10,7 @@ abstract class ClassesLoader
      * @param string $fileMask - маска файла
      * @return array|bool
      */
-    public function load($dirArr = self::DEF_DIRS, $fileMask = self::FILES_MASK_REG)
+    static function load($dirArr = self::DEF_DIRS, $fileMask = self::FILES_MASK_REG)
     {
         if (!is_array($dirArr)) {
             echo "Wrong Syntax!\nusage: ClassLoader::load( [\$dirArr {Array}], [\$fileMask {string}] ) \n";
