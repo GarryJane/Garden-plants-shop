@@ -9,7 +9,7 @@ class Controller
 
     public function __construct()
     {
-        $this->shopDB = new DB('127.0.0.1', 'gp_shop', 'root', 'MoodvinAs77');
+        $this->shopDB = new DB('127.0.0.1', 'gp_shop', 'ddl_dev', 'Moodvin1');
         // главная страница
         $this->content = $this->shopDB->getAllCategories();
         self::render();
