@@ -11,7 +11,7 @@
 
         <?php
     /* отладочный массив данных, имитация DB*/
-    $categories = [
+/*    $categories = [
         [
             'cat_name' => 'Лилейники',
             'cat_img' => 'img/plant-1.png'
@@ -44,10 +44,10 @@
             'cat_name' => 'Ирисы сибирские',
             'cat_img' => 'img/plant-4.png'
         ]
-    ];
+    ];*/
 
     $i = 0;
-    foreach ($categories as $cat) {
+    foreach ($this->content as $cat) {
         if( $i > 0 && $i % 4 == 0) {
             echo "</div><div class='row'>";
         }

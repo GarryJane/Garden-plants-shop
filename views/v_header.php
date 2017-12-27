@@ -2,7 +2,7 @@
 <!-- git test -->
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title><?= $page['title'] ?></title>
     <link rel="stylesheet" href="vendor/normalize-css/normalize.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">

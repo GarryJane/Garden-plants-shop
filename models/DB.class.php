@@ -27,9 +27,9 @@ class DB
 
     protected function connect()
     {
-
         // соединение с DB
         $this->dbLink = new mysqli($this->host, $this->user, $this->password, $this->schema);
+        mysqli_set_charset( $this->dbLink, 'utf8' );
 
         // вывод ошибки в случае неудачного соединения
         if ($this->dbLink->connect_errno) {
@@ -44,9 +44,9 @@ class DB
         mysqli_close($this->dbLink);
     }
 
-    public function getAllProducts()
+    public function getAllCategories()
     {
-        $sql = 'SELECT * FROM users';
+        $sql = 'SELECT * FROM categories';
         $result = $this->dbLink->query($sql);
         $resArr = [];
         for ($i = 0; $i <= $result->num_rows; $i++) {
