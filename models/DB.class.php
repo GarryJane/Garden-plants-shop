@@ -18,7 +18,6 @@ class DB
             return false;
         }
         $this->host = $host;
-
         $this->schema = $schema;
         $this->user = $user;
         $this->password = $password;
@@ -29,7 +28,7 @@ class DB
     {
         // соединение с DB
         $this->dbLink = new mysqli($this->host, $this->user, $this->password, $this->schema);
-        mysqli_set_charset( $this->dbLink, 'utf8' );
+        mysqli_set_charset($this->dbLink, 'utf8');
 
         // вывод ошибки в случае неудачного соединения
         if ($this->dbLink->connect_errno) {
@@ -46,12 +45,32 @@ class DB
 
     public function getAllCategories()
     {
-        $sql = 'SELECT * FROM categories';
+        $sql = '
+          SELECT * FROM categories
+         ';
         $result = $this->dbLink->query($sql);
         $resArr = [];
         for ($i = 0; $i <= $result->num_rows; $i++) {
             $resArr[] = $result->fetch_array(MYSQLI_ASSOC);
         }
+        $this->disconnect();
         return $resArr;
+    }
+
+    public function getCategoryPlants($id)
+    {
+        $sql = "
+          SELECT * FROM plants
+          WHERE cat_id = '$id' 
+        ";
+        $result = $this->dbLink->query($sql);
+        $resArr = [];
+        for ($i = 0; $i <= $result->num_rows; $i++) {
+            $resArr[] = $result->fetch_array(MYSQLI_ASSOC);
+        }
+        $this->disconnect();
+        return $resArr;
+
+
     }
 }

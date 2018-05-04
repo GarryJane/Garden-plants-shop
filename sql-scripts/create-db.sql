@@ -3,35 +3,35 @@ CREATE DATABASE IF NOT EXISTS gp_shop
   DEFAULT CHARACTER SET utf8
   DEFAULT COLLATE utf8_general_ci;
 
-use gp_shop;
+USE gp_shop;
 
 CREATE TABLE IF NOT EXISTS categories (
   cat_id    INT(6) UNSIGNED NOT NULL AUTO_INCREMENT,
-  cat_name  VARCHAR(128) NOT NULL,
-  cat_descr VARCHAR(256) NOT NULL,
+  cat_name  VARCHAR(128)    NOT NULL,
+  cat_descr VARCHAR(256)    NOT NULL,
   cat_img   VARCHAR(128),
   PRIMARY KEY (cat_id)
 );
 
 CREATE TABLE IF NOT EXISTS plants (
-  p_id    INT(6) UNSIGNED AUTO_INCREMENT,
-  cat_id INT(6) UNSIGNED NOT NULL,
-  p_name  VARCHAR(128) NOT NULL,
-  p_img VARCHAR(128) NOT NULL,
-  p_intro TEXT NOT NULL,
-  p_descr TEXT NOT NULL,
+  p_id         INT(6) UNSIGNED AUTO_INCREMENT,
+  cat_id       INT(6) UNSIGNED NOT NULL,
+  p_name       VARCHAR(128)    NOT NULL,
+  p_img        VARCHAR(128)    NOT NULL,
+  p_intro      TEXT            NOT NULL,
+  p_descr      TEXT            NOT NULL,
   p_additional TEXT,
-  p_price INT NOT NULL,
+  p_price      INT             NOT NULL,
   PRIMARY KEY (p_id),
-  FOREIGN KEY (cat_id) REFERENCES categories(cat_id)
+  FOREIGN KEY (cat_id) REFERENCES categories (cat_id)
 );
 
 INSERT INTO categories (cat_name, cat_descr, cat_img)
 VALUES
-  ("Лилейники","Описание лилейников","img/plant-1.png"),
+  ("Лилейники", "Описание лилейников", "img/plant-1.png"),
   ("Хосты", "Описание хост", "img/plant-2.png"),
   ("Пионы", "Описание пион", "img/plant-3.png"),
-  ("Лилейники2","Описание лилейников2","img/plant-1.png"),
+  ("Лилейники2", "Описание лилейников2", "img/plant-1.png"),
   ("Хосты2", "Описание хост2", "img/plant-2.png"),
   ("Пионы2", "Описание пион2", "img/plant-3.png");
 

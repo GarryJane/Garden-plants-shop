@@ -1,32 +1,39 @@
-<div class="main">
-    <div class="content">
-        <div class="row">
-
-        <?php
-    /* отладочный массив данных, имитация DB*/
-    $plant = [
-            'p_name' => 'Хосты',
-            'p_img' => 'img/plant-2.png',
-            'p_intro' => 'Кратное описание хосты',
-            'p_descr' => 'Энциклопедическая справка или что-то в этом роде по объёму',
-            'p_price' => '5000'
-    ];
+<div class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="page-title__text">Лилейники</h1>
+        </div>
+    </div>
+    <?php
+/*    echo "<pre>";
+    var_dump($this->content);
+    echo "</pre>";*/
 
     $i = 0;
-    foreach ($categories as $cat) {
-        if( $i > 0 && $i % 4 == 0) {
+
+    foreach ($this->content as $plant) {
+        if ($i > 0 && $i % 4 == 0) {
             echo "</div><div class='row'>";
         }
-        echo "<div class='col-md-3 col-sm-6'>";
-        echo "<figure class='category-represent'>";
-        echo "<img src='{$cat['cat_img']}' class='category-represent__img' alt=''>";
-        echo "<figcaption class='category-represent__name'>{$cat['cat_name']}</figcaption>";
-        echo "</figure>";
-        echo "</div>";
+        echo
+        "
+                    <div class='col-md-6 col-sm-12'>
+                        <a href='/?page=plant&id={$plant['p_id']}'>
+                            <figure class='category-represent'>
+                                <img src='{$plant['p_img']}' class='category-represent__img' alt=''>
+                                <figcaption class='category-represent__name'>
+                                    {$plant['p_name']}
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+            ";
         $i++;
     }
     ?>
-</div><!-- ./row-->
+    <div id="gallery-footer"></div>
+</div>
+
 </div> <!-- ./content -->
 </div> <!-- ./main -->
 </div> <!-- ./container -->

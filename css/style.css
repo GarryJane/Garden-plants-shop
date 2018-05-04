@@ -11,6 +11,11 @@ body {
     color: yellowgreen;
 }
 
+a:hover {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
 .container {
     display: table;
     padding-top: 2.5rem;

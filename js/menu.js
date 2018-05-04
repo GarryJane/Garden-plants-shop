@@ -4,7 +4,6 @@
  */
 function toggle(event) {
     this.container = document.getElementById(event.target.getAttribute('data-target'));
-    console.log('!!');
     let ifContainerHidden = this.container.classList.contains('hidden'); // запоминаем состояние на момент нажания
 
     // обходим все элементы с классом 'dialog-box-container', добавляем класс 'hidden'
@@ -24,7 +23,6 @@ function toggle(event) {
     } else {
         this.container.classList.add('hidden');
     }
-    console.log('CLICK');
 }
 
 /**

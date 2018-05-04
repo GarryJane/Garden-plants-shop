@@ -90,6 +90,11 @@
     height: 25px;
     font-size: 200%;
     font-weight: 100;
+    transition: color 250ms;
+}
+
+.mail-form__close-btn:hover {
+    color: red;
 }
 
 ._close-btn-container {
