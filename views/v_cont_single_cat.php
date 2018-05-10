@@ -5,6 +5,7 @@
 <div class="content">
     <div class="row">
         <div class="col-xs-12">
+            <h1 class="page-title__text"><a href="/"><i title="Главная" class="fa fa-home" aria-hidden="true"></i></a></h1>
             <h1 class="page-title__text">Лилейники</h1>
         </div>
     </div>
