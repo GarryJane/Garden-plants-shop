@@ -1,3 +1,7 @@
+<div id="full-size-container" class="overlay">
+    <img id="full-size-img" class="overlay__img" src="" alt="">
+</div>
+
 <div class="content">
     <div class="row">
         <div class="col-xs-12">
@@ -5,9 +9,9 @@
         </div>
     </div>
     <?php
-/*    echo "<pre>";
-    var_dump($this->content);
-    echo "</pre>";*/
+    /*    echo "<pre>";
+            var_dump($this->content);
+        echo "</pre>";*/
 
     $i = 0;
 
@@ -17,16 +21,14 @@
         }
         echo
         "
-                    <div class='col-md-6 col-sm-12'>
-                        <a href='/?page=plant&id={$plant['p_id']}'>
-                            <figure class='category-represent'>
-                                <img src='{$plant['p_img']}' class='category-represent__img' alt=''>
-                                <figcaption class='category-represent__name'>
-                                    {$plant['p_name']}
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
+            <div class='col-md-6 col-sm-12'>
+                 <figure class='category-represent'>
+                    <img src='{$plant['p_img']}' class='category-represent__img' alt=''>
+                    <figcaption class='category-represent__name'>
+                        {$plant['p_name']}
+                    </figcaption>
+                </figure>
+             </div>
             ";
         $i++;
     }

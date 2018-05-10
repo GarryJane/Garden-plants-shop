@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- git test -->
+
 <html lang="ru">
 <head>
     <meta charset="utf-8">
     <title><?= $page['title'] ?></title>
-    <link rel="stylesheet" href="vendor/normalize-css/normalize.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
@@ -24,8 +23,8 @@
             <i class="fa fa-bars nav_highlight"></i></label>
         <input type="checkbox" id="nav-sm-checkbox" class="nav-sm-checkbox">
         <ul class="top-menu">
-  <!--          <li class="top-menu__item top-menu__item_active" title="Домашняя страница">
-                <a>
+            <li class="top-menu__item top-menu__item_active" title="Домашняя страница">
+ <!--               <a>
                     <i title="Домашняя страница" class="fa fa-home" aria-hidden="true"></i>
                 </a>
             </li>

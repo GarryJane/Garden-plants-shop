@@ -67,3 +67,4 @@ videoCloseBtn.addEventListener("click", pauseVideo);
 
 
 
+

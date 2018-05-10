@@ -8,6 +8,25 @@
 
 .category-represent__img {
     width: 95%;
-    max-width: 200px;
+    max-width: 320px;
+    cursor: zoom-in;
+}
+
+.overlay {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: zoom-out;
+    z-index: 2;
+}
+
+.overlay__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    border: 1px solid yellowgreen;
 }
 
