@@ -65,7 +65,7 @@ class DB
         ";
         $result = $this->dbLink->query($sql);
         $resArr = [];
-        for ($i = 0; $i <= $result->num_rows; $i++) {
+        for ($i = 0; $i < $result->num_rows; $i++) {
             $resArr[] = $result->fetch_array(MYSQLI_ASSOC);
         }
         $this->disconnect();
