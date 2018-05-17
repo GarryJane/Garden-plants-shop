@@ -10,55 +10,23 @@
         <div class="row">
 
             <?php
-            /* отладочный массив данных, имитация DB*/
-            /*    $categories = [
-                    [
-                        'cat_name' => 'Лилейники',
-                        'cat_img' => 'img/plant-1.png'
-                    ],
-                    [
-                        'cat_name' => 'Хосты',
-                        'cat_img' => 'img/plant-2.png'
-                    ],
-                    [
-                        'cat_name' => 'Пионы',
-                        'cat_img' => 'img/plant-3.png'
-                    ],
-                    [
-                        'cat_name' => 'Ирисы сибирские',
-                        'cat_img' => 'img/plant-4.png'
-                    ],
-                    [
-                        'cat_name' => 'Лилейники',
-                        'cat_img' => 'img/plant-1.png'
-                    ],
-                    [
-                        'cat_name' => 'Хосты',
-                        'cat_img' => 'img/plant-2.png'
-                    ],
-                    [
-                        'cat_name' => 'Пионы',
-                        'cat_img' => 'img/plant-3.png'
-                    ],
-                    [
-                        'cat_name' => 'Ирисы сибирские',
-                        'cat_img' => 'img/plant-4.png'
-                    ]
-                ];*/
-
             $i = 0;
             foreach ($this->content as $cat) {
-                if ($i > 0 && $i % 4 == 0) {
+                if ($i > 0 && $i % 3 == 0) {
                     echo "</div><div class='row'>";
                 }
                 echo "
-                    <div class='col-md-3 col-sm-6'>
+                    <div class='col-md-4 col-sm-12'>
                         <a href='/?page=cat&id={$cat['cat_id']}'>
                             <figure class='category-represent'>
-                                <img src='{$cat['cat_img']}' class='category-represent__img' alt=''>
-                                <figcaption class='category-represent__name'>
-                                    {$cat['cat_name']}
+                               <img src='{$cat['cat_img']}' class='category-represent__img' alt=''>
+                               <figcaption>
+                                    <h3 class='category-represent__name category-represent__name_main-page'>
+                                        {$cat['cat_name']}
+                                    </h3>
+                                    <p class='category-represent__intro'>{$cat['cat_descr']}</p>
                                 </figcaption>
+                                
                             </figure>
                         </a>
                     </div>
@@ -66,7 +34,4 @@
                 $i++;
             }
             ?>
-        </div><!-- ./row-->
-    </div> <!-- ./content -->
-</div> <!-- ./main -->
-</div> <!-- ./container -->
+        </div>

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/categories.css">
     <link rel="stylesheet" href="css/feedback.css">
     <link rel="stylesheet" href="css/map.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <!--<link rel="stylesheet" href="css/gallery.css">-->
 </head>
 <body>
 <div class="container">
