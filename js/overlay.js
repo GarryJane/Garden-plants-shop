@@ -1,7 +1,7 @@
 let container = $('#full-size-container'); // контейнер полноразмерной картинки
 let fullSizeImg = $('#full-size-img'); // полноразмерная картинка
 
-if(container.length && fullSizeImg.length) {
+if (container.length && fullSizeImg.length) {
 
     let page = $('.content'); // контент
 
@@ -12,14 +12,19 @@ if(container.length && fullSizeImg.length) {
     });
 
     $('.category-represent__img').click(function (e) {
-        let srcFull = e.target.src.replace(/\.\w*$/,'-fullsize$&');
+
+        let srcFull = e.target.src.replace(/\.\w*$/, '-fullsize$&');
+
         $.get(srcFull)
-            .done(function() {
+            .done(function () {
                 fullSizeImg.attr('src', srcFull);
-            }).fail(function() {
+            })
+            .fail(function () {
                 fullSizeImg.attr('src', e.target.src);
-        });
-        container.show(200);
+            });
+
+        container.show();
+
         page.css('opacity', '0.5');
     });
 }
