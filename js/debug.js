@@ -1,5 +1,5 @@
 let win = $(window);
-$(".footer").text(win.width())
-win.on('resize', () => {
-    $(".footer").text(win.width());
+$(".footer").text(`w: ${win.width()}, h: ${win.height()}`);
+win.resize(() => {
+    $(".footer").text(`w: ${win.width()}, h: ${win.height()}`);
 });
