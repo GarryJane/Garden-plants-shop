@@ -2,7 +2,7 @@
 
 abstract class ClassesLoader
 {
-    const DEF_DIRS = ['models'];
+    const DEF_DIRS = ['./'];
     const FILES_MASK_REG = "/.class.php/";
 
     /**
@@ -24,7 +24,7 @@ abstract class ClassesLoader
             foreach ($files as $file) {
                 if (preg_match($fileMask, $file)) {
                     $incClassesArr[] = $file;
-                    include_once($dir . "/" . "$file");
+                    include_once($dir . "/" . $file);
                 }
             }
         }

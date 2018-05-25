@@ -4,11 +4,11 @@ html {
 }
 
 body {
-    background: url("../img/grunt_rastitelny.jpg") repeat fixed;
     height: 100%;
     padding: 0;
     margin: 0 auto;
     color: yellowgreen;
+    background: url("../img/grunt_rastitelny.jpg") repeat fixed;
 }
 
 a:hover, a:visited, a:focus {

@@ -3,7 +3,7 @@
     width: 350px; /* Ширина */
     text-align: center;
     margin: 0 auto;
-    color: lightcoral;
+    color: yellowgreen;
 }
 
 .category-represent__img {
@@ -19,6 +19,7 @@
     height: 50px;
     line-height: 50px;
 }
+
 
 .category-represent__name_main-page {
     text-align: center;

@@ -1,9 +1,9 @@
 <?php
 
-require_once ('ClassesLoader.php');
+require_once('./models/ClassesLoader.php');
 
 // Загрузка Классов
 // 
-ClassesLoader::load(['models']);
+ClassesLoader::load();
 
 $page = new Controller();
