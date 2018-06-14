@@ -12,19 +12,8 @@ if (container.length && fullSizeImg.length) {
     });
 
     $('.category-represent__img').click(function (e) {
-
-        let srcFull = e.target.src.replace(/\.\w*$/, '-fullsize$&');
-
-        $.get(srcFull)
-            .done(function () {
-                fullSizeImg.attr('src', srcFull);
-            })
-            .fail(function () {
-                fullSizeImg.attr('src', e.target.src);
-            });
-
+        fullSizeImg.attr('src', e.target.src);
         container.show();
-
         page.css('opacity', '0.5');
     });
 }

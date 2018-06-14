@@ -1,22 +1,23 @@
-<div class="main">
-    <div class="row">
-        <div class="col-xs-12">
-            <h1 class="page-title__text">Коллекция растений Марины Григорьевой</h1>
-            <h2 class="page-title__text">+7 123 456 78 90</h2>
-        </div>
-    </div>
-
-    <div class="content">
+<div class="container">
+    <div class="main">
         <div class="row">
+            <div class="col-xs-12">
+                <h1 class="page-title__text">Коллекция растений Марины Григорьевой</h1>
+                <h2 class="page-title__text">+7 123 456 78 90</h2>
+            </div>
+        </div>
 
-            <?php
-            $i = 0;
-            foreach ($this->content as $cat) {
-                if ($i > 0 && $i % 3 == 0) {
-                    echo "</div><div class='row'>";
-                }
-                echo "
-                    <div class='col-md-4 col-sm-12'>
+        <div class="content">
+            <div class="row">
+
+                <?php
+                $i = 0;
+                foreach ($this->content as $cat) {
+                    if ($i > 0 && $i % 3 == 0) {
+                        echo "</div><div class='row'>";
+                    }
+                    echo "
+                    <div class='col-md-6 col-lg-4 col-sm-12'>
                         <a href='/?page=cat&id={$cat['cat_id']}'>
                             <figure class='category-represent'>
                                <img src='{$cat['cat_img']}' class='category-represent__img' alt=''>
@@ -31,7 +32,7 @@
                         </a>
                     </div>
                 ";
-                $i++;
-            }
-            ?>
-        </div>
+                    $i++;
+                }
+                ?>
+            </div>
